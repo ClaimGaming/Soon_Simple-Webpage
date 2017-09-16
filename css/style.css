@@ -1,3 +1,8 @@
+/*-------------------------------
+Soon - Simple webpage 1.1       |
+Author : Rémi CELLARD;          |
+https://github.com/RemiCELLARD  |
+-------------------------------*/
 html,
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -44,19 +49,6 @@ a:hover{
   background-repeat: no-repeat;
 }
 
-/* Background images are set within the HTML using inline CSS, not here */
-.fade-carousel .slides .slide-1 {
-  background-image: url("../img/slide1.jpg"); 
-  opacity: 0.5;
-}
-.fade-carousel .slides .slide-2 {
-  background-image: url("../img/slide2.jpg");
-  opacity: 0.5;
-}
-.fade-carousel .slides .slide-3 {
-  background-image: url("../img/slide3.jpg");
-  opacity: 0.5;
-}
 
 .text-carousel{
     position: absolute;
@@ -84,6 +76,12 @@ a:hover{
     font-size: 1em;    
 }
 
+.btn{
+  text-shadow: none;
+}
+.btn:after{
+  font-family: FontAwesome;
+}
 
 .btn-lg{
   padding: 12px 16px;
@@ -148,8 +146,7 @@ a:hover{
     background-color: rgb(230, 33, 25);
 }
 .btn.youtube:after{
-    content: "\f16a";
-    font-family: FontAwesome;
+    content: "\f16a";    
 }
 .btn.youtube:hover{
     background-color: rgb(198, 28, 28);
@@ -161,8 +158,7 @@ a:hover{
     background-color: rgb(59, 89, 152);
 }
 .btn.facebook:after{
-    content: "\f082";
-    font-family: FontAwesome;
+    content: "\f082";    
 }
 .btn.facebook:hover{
     background-color: rgb(49, 73, 125);
@@ -174,8 +170,7 @@ a:hover{
     background-color: rgb(30, 161, 243);
 }
 .btn.twitter:after{
-    content: "\f099";
-    font-family: FontAwesome;
+    content: "\f099";    
 }
 .btn.twitter:hover{
     background-color: rgb(12, 140, 218);
@@ -187,8 +182,7 @@ a:hover{
     background-color: rgb(230, 80, 67);
 }
 .btn.google-plus:after{
-    content: "\f0d5";
-    font-family: FontAwesome;
+    content: "\f0d5";    
 }
 .btn.google-plus:hover{
     background-color: rgb(192, 68, 59);
@@ -200,8 +194,7 @@ a:hover{
     background-color: rgb(101, 68, 155);
 }
 .btn.twitch:after{
-    content: "\f1e8";
-    font-family: FontAwesome;
+    content: "\f1e8";    
 }
 .btn.twitch:hover{
     background-color: rgb(84, 56, 129);
@@ -212,8 +205,7 @@ a:hover{
     background-color: rgb(0, 100, 166);
 }
 .btn.paypal:after{
-    content: "\f1ed";
-    font-family: FontAwesome;
+    content: "\f1ed";    
 }
 .btn.paypal:hover{
     background-color: rgb(0, 83, 138);
@@ -224,8 +216,7 @@ a:hover{
     background-color: rgb(49, 43, 45);
 }
 .btn.steam:after{
-    content: "\f1b6";
-    font-family: FontAwesome;
+    content: "\f1b6";    
 }
 .btn.steam:hover{
     background-color: rgb(30, 26, 27);
@@ -236,8 +227,7 @@ a:hover{
     background-color: rgb(0, 175, 240);
 }
 .btn.skype:after{
-    content: "\f17e";
-    font-family: FontAwesome;
+    content: "\f17e";    
 }
 .btn.skype:hover{
     background-color: rgb(0, 153, 210);
@@ -248,11 +238,66 @@ a:hover{
     background-color: rgb(222, 222, 0);
 }
 .btn.snapchat:after{
-    content: "\f2ab";
-    font-family: FontAwesome;
+    content: "\f2ab";    
 }
 .btn.snapchat:hover{
     background-color: rgb(200, 200, 0);
+}
+
+.btn.pinterest,
+.btn.pinterest:focus {
+    color: #f5f5f5;
+    background-color: rgb(204, 32, 40);
+}
+.btn.pinterest:after{
+    content: "\f231";    
+}
+.btn.pinterest:hover{
+    background-color: rgb(179, 28, 35);
+}
+.btn.reddit,
+.btn.reddit:focus {
+    color: #f5f5f5;
+    background-color: rgb(255, 69, 0);
+}
+.btn.reddit:after{
+    content: "\f281";    
+}
+.btn.reddit:hover{
+    background-color: rgb(204, 56, 0);
+}
+.btn.vimeo,
+.btn.vimeo:focus {
+    color: #f5f5f5;
+    background-color: rgb(0, 173, 239);
+}
+.btn.vimeo:after{
+    content: "\f27d";    
+}
+.btn.vimeo:hover{
+    background-color: rgb(0, 150, 206);
+}
+.btn.vine,
+.btn.vine:focus {
+    color: #f5f5f5;
+    background-color: rgb(0, 191, 142);
+}
+.btn.vine:after{
+    content: "\f1ca";    
+}
+.btn.vine:hover{
+    background-color: rgb(0, 159, 120);
+}
+.btn.trello,
+.btn.trello:focus {
+    color: #f5f5f5;
+    background-color: rgb(0, 121, 191);
+}
+.btn.trello:after{
+    content: "\f181";    
+}
+.btn.trello:hover{
+    background-color: rgb(0, 99, 157);
 }
 
 @media (min-width: 768px) {
